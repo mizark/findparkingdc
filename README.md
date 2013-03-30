@@ -8,4 +8,4 @@ Submitting a parking spot: If you see an open parking spot you simply click "Sub
 
 Finding a parking spot: Click find parking spot and the app will take your GPS coordinates and show you a map of all the parking spots near you that have been submitted by others as well as directions to the nearest spot. 
 
-Available at: [http://tablessthing.appspot.com](http://tablessthing.appspot.com)
+Available at: [http://findparkingdc.appspot.com](http://findparkingdc.appspot.com)
