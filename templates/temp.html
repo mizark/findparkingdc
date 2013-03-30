@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <!--
+  <script type="text/javascript" src="/js/map.js"> </script>
+  -->
+  <script type="text/javascript">
+
+    $(document).ready(function(){
+
+      // Initialize the Google Maps API v3
+var map = new google.maps.Map(document.getElementById('map'), {
+  zoom: 15,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+});
+
+var marker = null;
+
+function autoUpdate() {
+  navigator.geolocation.getCurrentPosition(function(position) {  
+    var newPoint = new google.maps.LatLng(position.coords.latitude, 
+                                          position.coords.longitude);
+
+    if (marker) {
+      // Marker already created - Move it
+      marker.setPosition(newPoint);
+    }
+    else {
+      // Marker does not exist - Create it
+      marker = new google.maps.Marker({
+        position: newPoint,
+        map: map
+      });
+    }
+
+    // Center the map on the new position
+    map.setCenter(newPoint);
+  }); 
+
+  // Call the autoUpdate() function every 5 seconds
+  setTimeout(autoUpdate, 5000);
+}
+
+autoUpdate();
+    })
+  </script>
+
+  <link type="text/css" rel="stylesheet" href="/bootstrap/css/bootstrap.min.css"/>
+  <link type="text/css" rel="stylesheet" href="/templates/stylesheets/main.css"/>
+
+</head>
+
+
+<body>
+
+  <div class="navbar">
+      <div class="navbar-inner">
+        <div style="width:900px;margin:auto;text-shadow:none">
+          <a class="brand" href="/"><strong style="color:white;text-shadow:none">Park</strong></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="width: 800px; margin: auto">
+    <div id="map" style="width:800px; height: 500px">
+    </div>
+  </div>
+
+</body>
+
+</html>

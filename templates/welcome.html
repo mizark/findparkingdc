@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/submitspot.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function(){
+      $('#findspot').click(function(){
+        document.location.href='/main';
+      });
+
+    })
+  </script>
+  
+  <link type="text/css" rel="stylesheet" href="/bootstrap/css/bootstrap.min.css"/>
+  <link type="text/css" rel="stylesheet" href="/templates/stylesheets/main.css"/>
+
+</head>
+
+
+<body>
+
+  <div class="navbar">
+      <div class="navbar-inner">
+        <div style="width:900px;margin:auto;text-shadow:none">
+          <a class="brand" href="/"><strong style="color:white;text-shadow:none">Park in DC</strong></a>
+          <ul class="nav pull-right">
+            <li><a href="/" style="text-shadow:none">home</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <p style="text-align:center;padding-top:40px;font-size:50px;color:white"> 
+      <strong>Find a Parking spot in DC  </strong>
+    </p>
+    
+    <div class="row-fluid" style="padding-top:90px;padding-bottom:200px">
+      <div class="span6">
+        <button class="btn btn-block btn-large btn-info" id="findspot" style="height:250px;font-size:40px"> FIND <br> a parking spot </button>
+      </div>
+
+      <div class="span6">
+        <button class="btn btn-block btn-large btn-success" id="submitspot" style="height:250px;font-size:40px"> SUBMIT <br> a parking spot </button>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <footer class="footer">
+      Created by Mark Amirtharaj
+  </footer>
+
+</body>
+
+</html>

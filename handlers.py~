@@ -1,0 +1,1 @@
+app = webapp2.WSGIApplication([('/', enter.EnterPage)],debug=True)

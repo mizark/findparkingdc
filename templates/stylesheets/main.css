@@ -1,0 +1,38 @@
+body {
+
+     background: url('/templates/stylesheets/dc.jpg');
+     background-size: 100%;
+
+
+}
+
+
+.navbar-inner {
+    border:none;
+
+    -webkit-border-radius: 0;
+
+    border-radius: 0;
+
+    -moz-border-radius: 0;
+
+    o-border-radius: 0;
+
+    background: black;
+
+}
+
+
+.navbar .nav > li > a {
+    color: white;
+    text-shadow:none;
+}
+
+footer {
+	margin-top: 45px;
+	padding-top:5px;
+	border-top: 1px solid black;
+	color: #999;
+	text-align: center;
+
+}

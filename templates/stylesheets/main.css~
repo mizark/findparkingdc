@@ -1,0 +1,32 @@
+body {
+
+     background: url('/templates/stylesheets/billie_holiday.png')
+
+}
+
+.pagecontainer {
+     width:940px;
+     margin:0 auto;
+     display:none;
+}
+
+.colorcontainer {
+     background-color:#E0EEEE;
+}
+
+#frame1,#frame2,#frame3,#frame4 {
+    width:1050px;
+    height:650px;    
+    border:5px solid black;
+    padding-top:20px;    
+    margin-top:20px;
+}
+
+.text-center {
+    text-align:center;
+    color:white;
+}
+
+li {   
+   margin-bottom:-30px;
+}
